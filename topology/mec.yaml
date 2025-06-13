@@ -22,10 +22,8 @@ storage:
 nodes:
   - name: node0
     type: mock
-    port: 8090
     label:
       datasources:
-      - "G1"
       - 'hbw_1'
       - 'hbw_2'
       - 'sm_1'
@@ -34,10 +32,8 @@ nodes:
     delay: 0.001
   - name: node1
     type: mock
-    port: 8092
     label:
       datasources:
-      - "G2"
       - 'mm_1'
       - 'mm_2'
       - 'wt_1'
@@ -46,7 +42,6 @@ nodes:
     delay: 0.001
   - name: node2
     type: mock
-    port: 8093
     label:
       datasources:
       - "G3"
@@ -54,10 +49,8 @@ nodes:
     delay: 0
   - name: node3
     type: mock
-    port: 8093
     label:
       datasources:
-      - "G4"
       - 'hw_1'
       - 'pm_1'
       - 'dm_2'
@@ -65,21 +58,16 @@ nodes:
     delay: 0
   - name: node4
     type: mock
-    port: 8093
     label:
       datasources:
-      - "G5"
       - 'vgr_1'
       - 'vgr_2'
       category: edge
     delay: 0
   - name: node5
     type: mock
-    port: 8093
     label:
       datasources:
-      - "G6"
-      - "G7"
       - 'ov_1'
       - 'ov_2'
       category: edge

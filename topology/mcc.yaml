@@ -22,27 +22,8 @@ storage:
 nodes:
   - name: node0
     type: mock
-    port: 8090
     label:
       datasources:
-      - "G1"
-      - "G2"
-      - "G3"
-      - "G4"
-      - "G5"
-      - "G6"
-      - "G7"
-      - "Create Fine"
-      - "Send Fine"
-      - "Insert Fine Notification"
-      - "Insert Date Appeal to Prefecture"
-      - "Notify Result Appeal to Offender"
-      - "Send for Credit Collection"
-      - "Send Appeal to Prefecture"
-      - "Receive Result Appeal from Prefecture"
-      - "Add penalty"
-      - "Appeal to Judge"
-      - "Payment"
       - 'sm_2'
       - 'hbw_2'
       - 'hbw_1'
