@@ -1,0 +1,64 @@
+networks:
+  data:
+    delay: 0.025
+    initialResource: 2
+    bandwidth: 1000
+    payload: 10
+  control:
+    delay: 0.005
+    initialResource: 1
+    bandwidth: 1000
+    payload: 1
+compute:
+  delay: 0.000001
+  initialResource: 1
+  throughput: 100000
+  payload: 1
+storage:
+  delay: 0.00001
+  initialResource: 1
+  throughput: 10000
+  payload: 1
+nodes:
+  - name: node0
+    type: mock
+    port: 8090
+    label:
+      datasources:
+      - "G1"
+      - "G2"
+      - "G3"
+      - "G4"
+      - "G5"
+      - "G6"
+      - "G7"
+      - "Create Fine"
+      - "Send Fine"
+      - "Insert Fine Notification"
+      - "Insert Date Appeal to Prefecture"
+      - "Notify Result Appeal to Offender"
+      - "Send for Credit Collection"
+      - "Send Appeal to Prefecture"
+      - "Receive Result Appeal from Prefecture"
+      - "Add penalty"
+      - "Appeal to Judge"
+      - "Payment"
+      - 'sm_2'
+      - 'hbw_2'
+      - 'hbw_1'
+      - 'mm_2'
+      - 'mm_1'
+      - 'wt_1'
+      - 'sm_1'
+      - 'hw_1'
+      - 'pm_1'
+      - 'wt_2'
+      - 'vgr_2'
+      - 'vgr_1'
+      - 'ov_2'
+      - 'dm_2'
+      - 'ov_1'
+      category: edge
+    delay: 0.001
+assignment:
+  helloAlgo: edge
